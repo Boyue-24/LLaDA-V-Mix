@@ -1,0 +1,21 @@
+# CLAUDE.md file
+CLAUDE.md
+
+# Training data directory
+train/data/
+
+# Model directory
+train/model/
+
+# Virtual environment
+.venv/
+
+# Claude files
+.claude/
+
+# Python project config
+pyproject.toml
+
+# UV lock file
+uv.lock
+
