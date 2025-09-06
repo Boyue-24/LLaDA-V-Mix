@@ -153,28 +153,5 @@ We provide the evaluation code in this repository, following the [lmms-eval](htt
    cd eval && bash scripts/evaluate.sh
    ```
 
-## Acknowledgments
-The code is largely based on the [LLaVA-NeXT](https://github.com/LLaVA-VL/LLaVA-NeXT), [MAmmoTH-VL](https://github.com/MAmmoTH-VL/MAmmoTH-VL), [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) and [dLLM-cache](https://github.com/maomaocun/dLLM-cache/tree/main). We thank the authors for their great work. 
-
-We are also very grateful to Chengyue for helping us adapt [Fast-dLLM](https://github.com/NVlabs/Fast-dLLM), which significantly accelerates the generation process.
-
-## Discussion
-
-Feel free to scan the WeChat QR code below to participate in the discussion and stay updated with the latest progress.
-
-<div style="display: flex; justify-content: center; flex-wrap: wrap;">
-    <img src="https://github.com/ML-GSAI/LLaDA/blob/main/imgs/QR.jpg" style="width: 50%" />
-</div>
-
-## Citation
-
-```bibtex
-@article{you2025llada,
-  title={LLaDA-V: Large Language Diffusion Models with Visual Instruction Tuning},
-  author={You, Zebin and Nie, Shen and Zhang, Xiaolu and Hu, Jun and Zhou, Jun and Lu, Zhiwu and Wen, Ji-Rong and Li, Chongxuan},
-  journal={arXiv preprint arXiv:2505.16933},
-  year={2025}
-}
-```
 
 
