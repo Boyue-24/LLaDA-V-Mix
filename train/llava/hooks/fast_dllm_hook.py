@@ -164,10 +164,11 @@ class FastDLLMGenerationHook:
             raise NotImplementedError("`inputs_embeds` is not supported")
 
         if images is not None:
-            (inputs, position_ids, attention_mask, _, inputs_embeds, _) = self.model.prepare_inputs_labels_for_multimodal(inputs, position_ids, attention_mask, None, None, images, modalities, image_sizes=image_sizes)
+            (inputs, position_ids, attention_mask, _, _, inputs_embeds_txt, _, inputs_embeds_img, _) = self.model.prepare_inputs_labels_for_multimodal(inputs, position_ids, attention_mask, None, None, images, modalities, image_sizes=image_sizes)
         else:
-            inputs_embeds = self.model.get_model().embed_tokens(inputs)
-        output = self._fast_generate_with_embeds(inputs_embeds=inputs_embeds, **kwargs)
+            inputs_embeds_txt = self.model.get_model().embed_tokens(inputs)
+
+        output = self._fast_generate_with_embeds(inputs_embeds=inputs_embeds_txt, **kwargs)
         return output
     
     @torch.no_grad()

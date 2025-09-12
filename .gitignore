@@ -7,6 +7,9 @@ train/data/
 # Model directory
 train/model/
 
+# Exp directory
+train/exp/
+
 # Virtual environment
 .venv/
 
